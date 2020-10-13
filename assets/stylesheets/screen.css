@@ -1,0 +1,306 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../.rvm/gems/ruby-2.6.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../../saas/partials/_base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../../saas/partials/_base.scss */
+body {
+  background: black;
+  color: #4AC498;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+}
+
+/* line 17, ../../saas/partials/_base.scss */
+.fa {
+  margin-right: 5px;
+}
+
+/* line 21, ../../saas/partials/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 25, ../../saas/partials/_base.scss */
+.wrapper {
+  display: flex;
+  padding: 30px;
+  flex: 1;
+}
+/* line 30, ../../saas/partials/_base.scss */
+.wrapper > .left-info {
+  max-width: 200px;
+  min-width: 200px;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+/* line 37, ../../saas/partials/_base.scss */
+.wrapper > .left-info p, .wrapper > .left-info ul {
+  margin-bottom: 45px;
+}
+/* line 42, ../../saas/partials/_base.scss */
+.wrapper > .main-info {
+  flex: 1;
+  text-align: center;
+}
+/* line 46, ../../saas/partials/_base.scss */
+.wrapper > .main-info .meter {
+  font-size: 22px;
+}
+/* line 49, ../../saas/partials/_base.scss */
+.wrapper > .main-info .meter .reading {
+  font-size: 150px;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  line-height: 135px;
+}
+/* line 57, ../../saas/partials/_base.scss */
+.wrapper > .main-info .gyro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+/* line 63, ../../saas/partials/_base.scss */
+.wrapper > .main-info .gyro > div:first-child, .wrapper > .main-info .gyro > div:last-child {
+  position: relative;
+  width: 197px;
+  height: 197px;
+}
+/* line 68, ../../saas/partials/_base.scss */
+.wrapper > .main-info .gyro > div:first-child > *, .wrapper > .main-info .gyro > div:last-child > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 74, ../../saas/partials/_base.scss */
+.wrapper > .main-info .gyro > div:first-child .layer-up, .wrapper > .main-info .gyro > div:last-child .layer-up {
+  z-index: 2;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 15px;
+  right: 0;
+}
+/* line 83, ../../saas/partials/_base.scss */
+.wrapper > .main-info .gyro .compass {
+  position: relative;
+}
+/* line 86, ../../saas/partials/_base.scss */
+.wrapper > .main-info .gyro .compass .reading {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  height: 30px;
+  z-index: 9;
+}
+/* line 97, ../../saas/partials/_base.scss */
+.wrapper > .main-info .gyro .compass .reading::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #4AC498;
+  top: -21px;
+  left: -1px;
+}
+/* line 111, ../../saas/partials/_base.scss */
+.wrapper > .main-info .blindspot {
+  min-height: 340px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 118, ../../saas/partials/_base.scss */
+.wrapper > .main-info .blindspot > .trident-top {
+  position: relative;
+  z-index: 9;
+}
+/* line 123, ../../saas/partials/_base.scss */
+.wrapper > .main-info .blindspot .tyres {
+  position: absolute;
+  z-index: 10;
+}
+/* line 127, ../../saas/partials/_base.scss */
+.wrapper > .main-info .blindspot .tyres.TL {
+  margin: -155px 175px 0 0;
+  text-align: right;
+}
+/* line 128, ../../saas/partials/_base.scss */
+.wrapper > .main-info .blindspot .tyres.TR {
+  margin: -155px 0 0 175px;
+  text-align: left;
+}
+/* line 129, ../../saas/partials/_base.scss */
+.wrapper > .main-info .blindspot .tyres.RR {
+  margin: 300px 0 0 0;
+}
+/* line 132, ../../saas/partials/_base.scss */
+.wrapper > .main-info .blindspot > .bg {
+  position: absolute;
+  width: 257px;
+  height: 257px;
+  opacity: 0.15;
+  background: radial-gradient(50% 60%, #4ac498 30%, rgba(74, 196, 152, 0) 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 147, ../../saas/partials/_base.scss */
+.wrapper > .right-info {
+  max-width: 200px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+/* line 154, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data {
+  display: flex;
+  flex: 1;
+}
+/* line 158, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:first-child {
+  flex: 1;
+  text-align: right;
+  margin-right: 30px;
+  align-self: flex-end;
+}
+/* line 165, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child {
+  display: flex;
+}
+/* line 168, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+}
+/* line 172, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child > div.battery-volt {
+  justify-content: space-between;
+}
+/* line 175, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child > div.battery-volt > span {
+  border: 1px solid #4AC498;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 186, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child > div.battery-temp {
+  margin-right: 5px;
+}
+/* line 189, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child > div.battery-temp > span {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  position: relative;
+}
+/* line 196, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child > div.battery-temp > span::after {
+  content: "";
+  width: 7px;
+  height: 1px;
+  background: #4AC498;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 207, ../../saas/partials/_base.scss */
+.wrapper > .right-info > .data > div:last-child > div.battery-temp > span:last-child::before {
+  content: "";
+  width: 7px;
+  height: 1px;
+  background: #4AC498;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

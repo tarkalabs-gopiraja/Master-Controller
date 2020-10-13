@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+
+    <link href="assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="assets/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-info">
+        <div>
+        <p>
+        Acceleration:<br/>
+        0-60: <strong>3</strong> secs<br/>
+        0-100: <strong>5</strong> secs
+      </p>
+
+      <p>
+        Max Top Speed:<br/>
+        65 KMPH
+      </p>
+
+        <ul>
+          <li>Eco</li>
+          <li>Comfort</li>
+          <li>Sport</li>
+        </ul>
+      </div>
+
+      <div>
+          <img class="layer-up" src="./assets/images/motor.svg" width="47" /><br/>
+          55°<br/>
+          2000 RPM<br/>
+          <i class="fa fa-long-arrow-up" aria-hidden="true"></i>300 Amps<br/>
+          <i class="fa fa-long-arrow-down" aria-hidden="true"></i>50 Amps
+      </div>
+      </div>
+      <div class="main-info">
+        <div class="meter">
+          <span class="reading">55</span>
+          <span>KMPH</span>
+      </div>
+
+      <div class="gyro">
+        <div>
+          <img class="layer-up" src="./assets/images/trident-front.png" width="197" />
+          <img src="./assets/images/dir-circle.svg" width="197" />
+        </div>
+        <div class="compass">
+          <span class="reading">0°</span>
+          <img src="./assets/images/compass.svg" width="127" style="transform: rotate(0deg);" />
+        </div>
+        <div>
+          <img class="layer-up" src="./assets/images/trident-side.png" width="197" />
+          <img src="./assets/images/dir-circle.svg" width="197" />
+        </div>
+      </div>
+
+      <div class="blindspot">
+        <span class="tyres TL">
+        45 PSI<br/>
+        2000 RPM
+        </span>
+        <span class="tyres TR">
+          45 PSI<br/>
+          2000 RPM
+          </span>
+          <span class="tyres RR">
+            45 PSI<br/>
+            2000 RPM
+            </span>
+
+        <img class="trident-top" src="./assets/images/trident-top.png" width="76" />
+        <span class="bg"></span>
+      </div>
+
+
+      </div>
+      <div class="right-info">
+        <!-- <div>
+          Save as Log
+          Access Log
+        </div> -->
+
+        <div class="data">
+          <div>
+            60 KM Left<br/>
+            50% Usable<br/>
+            20 Ah used<br/>
+            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>300 Amps<br/>
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>50 Amps
+          </div>
+          <div>
+            <div class="battery-temp">
+              <span>55°</span>
+              <span>55°</span>
+              <span>55°</span>
+              <span>55°</span>
+              <span>55°</span>
+
+            </div>
+            <div class="battery-volt">
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+              <span>3.7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
